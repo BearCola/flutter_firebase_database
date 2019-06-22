@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
     board = Board('', '');
     databaseReference = database.reference().child('community_board');
     databaseReference.onChildAdded.listen(_onEntryAdded);
-    databaseReference.onChildChanged.listen(_onEntryChanged)
+    databaseReference.onChildChanged.listen(_onEntryChanged);
   }
 
   @override
